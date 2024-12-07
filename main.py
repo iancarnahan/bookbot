@@ -13,14 +13,14 @@ def wordcount(text):
     return len(words)
 
 def character_count(text):
-    character_count = {}
+    char_dict = {}
     for char in text:
         char = char.lower()
-        if char in character_count:
-            character_count[char] += 1
+        if char in char_dict:
+            char_dict[char] += 1
         else:
-            character_count[char] = 1
-    return character_count
+            char_dict[char] = 1
+    return char_dict
 
 word_count_result, char_count_result = main()
 print(word_count_result)
